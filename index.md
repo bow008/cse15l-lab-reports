@@ -1,7 +1,7 @@
 Hello World!
 
-# Heading 1
-## Heading 2
+# This is headng 1
+## This is heading 2
 ### Heading 3
 
 *Italic text*
