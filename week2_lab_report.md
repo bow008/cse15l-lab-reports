@@ -18,7 +18,7 @@ When it is installed, you should be able to open a window that looks like this (
 
 **substep 2**: Open your terminal. You can open your terminal in VS Code (Ctrl + `).
 
-**substep 3**: Enter the following commend in terminal, <mark >but with the `zz` replaced by the letters in your course-specific account:</mark>
+**substep 3**: Enter the following commend in terminal, <mark>but with the `zz` replaced by the letters in your course-specific account:</mark>
 
 `$ ssh cs15lsp22zz@ieng6.ucsd.edu`
 
@@ -60,9 +60,11 @@ Here are some specific useful commands to try:
 * `cat /home/linux/ieng6/cs15lsp22/public/hello.txt`
 
 For example, now I am in the working directory `/Users/boyuwang/Documents/CSE15L`, and I use touch to create a txt file named "myFile.txt":
+
 ![image](touch.png)
 
 Now, we can use `echo` to write text in my file, and use `cat` to print out the text in my file:
+
 ![image](echo.png)
 
 Try more commands by yourself!
@@ -85,3 +87,37 @@ You should be prompted for a password just like when you log in with `ssh`. When
 
 ## Step5: Setting an SSH Key
 
+If we don't want to retype the password every time we log into the remote server, there is a great solution: we can use `ssh` keys.
+
+Here is what you should do:
+1. Make sure you are on client (your own computer)
+2. Type `ssh-keygen` on your terminal, and press "Enter".
+3. When you are prompted to "enter file in which to save the key", you should enter `/Users/<user-name>/.ssh/id_rsa` (where `,user-name` is your own username), and press "Enter".
+4. When you are prompted to enter passphrase, you need to **make sure that you do not add a passphrase**. Just press "Enter".
+5. Now you should get a message telling you that your identification has been saved somewhere.
+
+> This is what it basically looks like:
+![image](key.png)
+
+6. Now we need to copy the public key to the directory of your user account on the server. First, <mark>connect to the remote server</mark>, and enter `mkdir .ssh`.
+7. Then, log out of the remote server. On client terminal, type 
+`scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`. **make sure you replace `<user-name>` and `zz` by your own username and your own account, respectively.**
+***
+
+And that's it! Next time when you try to connect to the remote server, you don't need to enter the password anymore.
+
+## Step6: Optimizing Remote Running
+
+Finally, there are some useful commands to make using the remote server more easily.
+* You can write a command in quotes at the end of an command to directly run it on the remote server, then exit.
+
+> This is what it basically looks like:
+![image](easier.png)
+
+* You can also use the up-arrow on your keyboard to recall the last command that was run.
+
+***
+
+## End
+
+This is the end of this tutorial. Thanks for learning!
