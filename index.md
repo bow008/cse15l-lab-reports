@@ -29,3 +29,6 @@ print('Hello')
 ```
 
 Here we are now!
+
+
+[Lab Report 1](https://bow008.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
