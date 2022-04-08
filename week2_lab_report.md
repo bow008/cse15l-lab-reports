@@ -1,7 +1,8 @@
 # Week 2 Lab Report
 This is a tutorial about how to log into a course-specific account on `ieng6`. There are 6 steps.
 <!--- <span style="color:green">ieng6</span> --->
----
+
+***
 ## Step 1: Installing VScode
 If you haven't installed Visual Studio Code yet, the first step is to go to the [Visual Studio Website](https://code.visualstudio.com/) and follow the instructions to download and install it on your computer.
 
@@ -39,7 +40,8 @@ You should type `yes` and press "Enter".
 > After doing all of the above 4 substeps, your terminal will probably be connected to a computer in the CSE basement, and you'll receive a message like this:
 ![image](server.png)
 And that's it!
----
+
+***
 ## Step 3: Trying Some Commands
 Now you can practice what you've learned in lectures! Try some commands, both on the remote computer and on your own computer. 
 
@@ -57,9 +59,29 @@ Here are some specific useful commands to try:
 * `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`
 * `cat /home/linux/ieng6/cs15lsp22/public/hello.txt`
 
+For example, now I am in the working directory `/Users/boyuwang/Documents/CSE15L`, and I use touch to create a txt file named "myFile.txt":
+![image](touch.png)
+
+Now, we can use `echo` to write text in my file, and use `cat` to print out the text in my file:
+![image](echo.png)
+
+Try more commands by yourself!
+
 ---
 
 ## Step 4: Moving Files with `scp`
 Now if we want to copy a file from your computer to a remote computer, we can run the command `scp` from the *client* (that means from your computer, not logged into `ieng6`).
 
+For example, if we want to move the file "myFile.txt" to the remote computer, we first need to make sure that the terminal is in the directiory where the file "myFile.txt" is located. this can be done using the command `cd`. In this case, we need to run the command `cd "/Users/boyuwang/Documents/CSE15L/"`.
+
+Now, run this command: (as usually, using your username):
+
+`scp myFile.txt cs15lsp22zz@ieng6.ucsd.edu:~/`
+
+You should be prompted for a password just like when you log in with `ssh`. When you  log into ieng6 with ssh again, you can use `ls` to see that our file "myFile.txt" is in your home directory:
+![image](scp.png)
+
+***
+
+## Step5: Setting an SSH Key
 
