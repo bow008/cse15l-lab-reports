@@ -28,6 +28,7 @@ Here is a screenshot of the code change diff:
 Below is the output of running the file at the command line for the version where it was failing:
 
 ```
+java MarkdownParse test-file2.md
 Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -2
 	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
 	at java.base/java.lang.String.charAt(String.java:1512)
