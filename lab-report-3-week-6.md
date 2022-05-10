@@ -12,7 +12,7 @@ Here is what the `config` file looks like (with VSCode):
 
 ![image](report3-2.png)
 
-The `ssh` command logging you into your account using the alias `ieng6`:
+The `ssh` command logging me into my account using the alias `ieng6`:
 
 ![image](report3-10.png)
 
@@ -31,7 +31,7 @@ The public and private keys in my user account:
 ![image](report3-5.png)
 
 Running `git` commands to commit and push a change to
-Github while logged into your ieng6 account:
+Github while logged into my ieng6 account:
 
 ![image](report3-6.png)
 
