@@ -18,7 +18,19 @@ Here is an `scp` command copying the file `run.sh` to my account using the alias
 
 ## Setup Github Access from ieng6
 
+The public key is stored on Github:
 
+![image](report3-4.png)
 
+The public and private keys in my user account:
+
+![image](report3-5.png)
+
+Running git commands to commit and push a change to
+Github while logged into your ieng6 account:
+
+![image](report3-6.png)
+
+Here is [the resulting commit](https://github.com/bow008/report3-demo/commit/0ee43a0b9f3c955d6e848524a4c5aa59b851f090)
 
 ## Copy whole directories with scp
