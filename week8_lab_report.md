@@ -4,6 +4,8 @@ Here's the link to my markdown-parse repository:
 
 Here's teh link to the one I reviewed in week 7:
 
+I used [the CommonMark demo site](https://spec.commonmark.org/dingus/) as reference to decide what each test *shoud* produce.
+
 Here's the code in `MarkdownParseTest.java` in my markdown-parse repositiory, for snippet1, snippet2, and snippet3, respectively:
 
 ![image](report4-4.png)
