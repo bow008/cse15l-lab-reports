@@ -17,7 +17,7 @@ And my implementation of markdown-parse failed this test:
 
 ![image](report4-7.png)
 
-I think a possible simple remedy is to add some code that detexts backticks, so that if a backtick is detected, the program immediately tries to find the next backtick, and ignores everying between the two backticks.
+I think a possible simple remedy is to add some code that detexts backticks, so that if a backtick is detected, the program immediately tries to find the next backtick, and ignores everying between the two backticks. Note that tickmarks in the parenthesis that contains the link do not need to be detected.
 
 Here's the code in `MarkdownParseTest.java` in my markdown-parse repositiory, for snippet2:
 
@@ -39,7 +39,7 @@ And my implementation of markdown-parse failed this test:
 
 This one is way beyond the reach of my intelligence. I don't have any idea about how to fix it.
 
-## The `markdown-parse` that I reviewed:
+## The `markdown-parse` I reviewed:
 
 Here's the code in `MarkdownParseTest.java` in the repositiory that I reviewed, for snippet1:
 
