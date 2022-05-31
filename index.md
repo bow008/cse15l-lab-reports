@@ -1,34 +1,11 @@
-Hello World!
+##  Links for all the lab reports
 
-# This is headng 1
-## This is heading 2
-### Heading 3
+[Lab Report 1](https://bow008.github.io/cse15l-lab-reports/week2_lab_report.html)
 
-*Italic text*
+[Lab Report 2](https://bow008.github.io/cse15l-lab-reports/week4_lab_report.html)
 
-**Bold Text**
+[Lab Report 3](https://bow008.github.io/cse15l-lab-reports/lab-report-3-week-6.html)
 
-[ucsd website](https://www.ucsd.edu)
+[Lab Report 4](https://bow008.github.io/cse15l-lab-reports/week8_lab_report.html)
 
-
-Here is my shopping list
-* yogurt
-* apples
-* oranges
-
-Onat's favorite programming languages
-1. Python
-2. Java
-3. C++
-
-This is an `inline code`
-
-```
-# This is a code block
-print('Hello')
-```
-
-Here we are now!
-
-
-[Lab Report 1](https://bow008.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+[Lab Report 5](https://bow008.github.io/cse15l-lab-reports/week10_lab_report.html)
